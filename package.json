@@ -1,0 +1,14 @@
+{
+  "name": "comp125-2020-lesson4",
+  "version": "1",
+  "description": "Demo Site for COMP125",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Christy Paul",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
