@@ -5,8 +5,8 @@
     //named function
     function Start()
         {
-            console.log('%cApp started...', "color:blue; font-size: 24px");
-                
+            console.log('%cApp started...', "color:blue; font-size: 24px");           
+            
 
         }    
     
