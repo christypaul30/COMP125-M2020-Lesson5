@@ -1,82 +1,68 @@
 // IIFE - Immediately Invoked Function Expression = Anonymous self executing function - closure
 (function(){
 
-    //name function
-    /* function Start ()
-    {
-        let x = 5;
-        if(x === "5") //== means somewhat equal/same, Always use === means exactly equal
+
+    //named function
+    function Start()
         {
-            console.log("X is equal to 5");
-        }
-        console.log('%cApp Started...', "color:blue; font-size: 24px");
+            console.log('%cApp started...', "color:blue; font-size: 24px");
+            /* this is how you connect clickbutton to id in index, so when you click the button on the website, then you will see it in inspect that it has been clicked */
+           /*  let clickMeButton = document.getElementById("clickMeButton"); 
 
-    } */
-
-    /* function Start ()
-    {
-        let x = 5;
-        if(x >= "5") //>== doesn't exist, >= only exists
-        
-        {
-            console.log("X is equal to 5");
-        }
-        console.log('%cApp Started...', "color:blue; font-size: 24px");
-
-    } */
-
-    /* function Start ()
-    {
-        let x = 5;
-        if(x >= "5") 
-        //confirm are useful. It's helpful.
-        {
-            if(confirm("Are you sure?"))
+            if(clickMeButton)
             {
-                console.log("X is equal to 5");
-            }
-            else
+            console.log(clickMeButton);
+            } */
+
+            let buttons = document.getElementsByTagName("button");
+            let buttonCount = 0;
+
+            if (buttons)
             {
-                console.log("X is maybe 5??");
+                /* for (let index = 0; index < buttons.length; index++) {
+                    console.log(buttons[index]);
+                    
+                }
+
+                console.log(button); */
+                //access each button seperately using loop, use the forof loop, returns a collection not array
+                for (const button of buttons) {
+
+                    if (buttonCount > 0)
+                    button.style.fontSize = "80px";
+                    buttonCount++;
+                    console.log(button);
+                }
             }
-        }
-        console.log('%cApp Started...', "color:blue; font-size: 24px");
 
-    } */
+           /*  let buttonQuery = document.querySelector("button"); */
 
-    function Start ()
-    {
-        let x = 5;
-        if(x >= "5") //add breakpoint, red dot. then click run bug on the sidebar, 
-        //then click run and debug, and on the left side under variable you should see breakpoint in local
-        //confirm are useful. It's helpful.
-        {
-            if(confirm("Are you sure?"))
+            let buttonsQuery = document.querySelectorAll("button");
+
+            if(buttonsQuery) 
             {
-                console.log("X is equal to 5");
-            }
-            else
-            {
-                console.log("X is maybe 5??");
-            }
-        }
-        console.log('%cApp Started...', "color:blue; font-size: 24px");
+                /* buttonsQuery.forEach(button => {
+                    console.log(button);
+                
+                }); */
+              
+                //use the below looping because it always works!
+                /* for (const button of buttonsQuery) {
+                console.log(button);
+                } */
+            } 
 
-    }
- 
-    // declarative format
-    /* let Start = function ()
-    {
-        console.log("App started...")
-    } */
+            let helloworld = document.getElementsByTagName("h1")[0].textContent;
 
-    /* let Start = ()=>
-    {
-        console.log("App started...")
-    } */
+            console.log(helloworld);
 
-    //NOTES
-    // don't ever use document.write or alert or var
+            let mainInnerHTML = document.getElementsByTagName("main")[0].innerText;
+
+            console.log(mainInnerHTML);
+            
+
+        }    
+    
 
     window.addEventListener("load", Start);
     
