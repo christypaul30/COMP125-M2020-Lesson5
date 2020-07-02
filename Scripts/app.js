@@ -29,7 +29,7 @@
                 for (const button of buttons) {
 
                     if (buttonCount > 0)
-                    button.style.fontSize = "80px";
+                    button.style.fontSize = "20px";
                     buttonCount++;
                     console.log(button);
                 }
