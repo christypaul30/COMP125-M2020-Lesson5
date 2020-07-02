@@ -27,6 +27,15 @@
                 }             
             
             }
+            //Step 1: hook into spot (element) on page
+            let jumbotron = document.getElementsByClassName("jumbotron")[0];
+            //Step 2: create new element
+            let newParagraph = document.createElement("p");
+            //step 3: configure new elemtn
+            newParagraph.textContent = title;
+            
+            //Step 4: attach new element
+            jumbotron.appendChild();
 
             
 
